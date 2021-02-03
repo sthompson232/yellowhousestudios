@@ -13,9 +13,7 @@
     <title>yellowhousestudios</title>
     {% endif %}
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="{% static 'yhs/main.css' %}">
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -28,5 +26,18 @@
 <body>
 {% block content %}
 {% endblock %}
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'jquery/dist/jquery.slim.min.js' %}"></script>
+<script src="{% static 'popper.js/dist/popper.min.js' %}"></script>
+<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+<!-- AOC JavaScript -->
+<script src="{% static 'aoc/aoc.js' %}"></script>
+<script>AOS.init({
+  duration: 1300,
+  offset: 200
+});</script> 
+
 </body>
 </html>
