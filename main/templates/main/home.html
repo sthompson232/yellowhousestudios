@@ -1,7 +1,55 @@
 {% extends "yhs/base.html" %}
+{% load static %}
 
 {% block content %}
-<h1 class="display-1">yellow</h1>
-<h1 class="display-1">house</h1>
-<h1 class="display-1">studios</h1>
+<div class="container-fluid h-txt">
+    <div class="h-txt">
+    <div class="row">
+        <div class="col">
+            <h1 style="font-size: 12rem;" class="display-1 text-white">HAND <span class="text-primary">CODED</span> WEB DESIGN</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <p class="text-white">Our websites are not created using templates, contact us today and own your unique website. Whether you want to extend your brand or sell your products, we can make your vision become a reality.</p>
+            <button class="btn btn-outline-primary text-white">Pricing</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container-fluid mid-grey py-4">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center display-2 py-4">WHAT WE DO</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <ul style="list-style: none;">
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">Design your website</lead></li>
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">Build your website</lead></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul style="list-style: none;">
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">Deploy your website</lead></li>
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">Host your website</lead></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul style="list-style: none;">
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">Get your domain</lead></li>
+                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.5rem;">SSL certify your website</lead></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-white px-4">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-2 py-4 separator">THE PROCESS</h1>
+        </div>
+    </div>
+</div>
+    
 {% endblock %}

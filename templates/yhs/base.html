@@ -19,11 +19,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <!-- Custom Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/cka0spm.css">
+
+
 </head>
 
-<body>
+<body class="custom-bg">
+  <nav class="navbar navbar-expand-md navbar-dark bg-trans">
+    <a class="navbar-brand" href="#">yellowhousestudios</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="mx-auto navbar-nav">
+        <a class="mx-4 nav-item nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="mx-4 nav-item nav-link text-white" href="#">Contact</a>
+        <a class="mx-4 nav-item nav-link text-white" href="#">Pricing</a>
+        <a class="mx-4 nav-item nav-link text-white" href="#">Portfolio</a>
+      </div>
+    </div>
+  </nav>
 {% block content %}
 {% endblock %}
 
