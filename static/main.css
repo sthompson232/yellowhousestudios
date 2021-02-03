@@ -1,6 +1,19 @@
 @charset "UTF-8";
 @import "aoc/aoc.css";
 
+.navbar-nav>a:hover {
+  color: #F9ED69!important;
+}
+
+.custom-round {
+  border-radius: 40px!important;
+}
+
+.button-hov:hover
+.text-hov {
+  color: black;
+}
+
 .separator {
   display: flex;
   align-items: center;
