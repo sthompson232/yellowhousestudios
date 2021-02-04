@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import "aoc/aoc.css";
 
-#middle-card {
-  top: -20px;
-}
-
 #price-card {
   transition: transform 1s;
 }

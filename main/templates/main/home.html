@@ -14,7 +14,7 @@
         <div class="col-8">
             <lead style="font-size: 1.2rem;" class="text-white">Our websites do not use templates, ensuring a unique website for every customer. Get your free website consultation today and take your first step to extend your brand. Whether you want to extend your brand or sell your products, we can make your vision become a reality.</lead>
             <br>
-            <a style="border-width: 5px;" class="my-5 px-5 btn btn-lg btn-outline-primary text-white button-hov"><h1 class="text-hov">Free Website Consultation</h1></a>
+            <a style="border-width: 5px;" class="my-5 px-5 btn btn-lg btn-outline-primary text-white button-hov" href="{% url 'contact' 'consultation' %}"><h1 class="text-hov">Free Website Consultation</h1></a>
         </div>
     </div>
     </div>
@@ -59,11 +59,13 @@
     <div class="row">
         <div class="col-md-8">
             <div class="row">
-                <div class="col-6 d-flex justify-content-start">
-                    <img class="img-fluid" src="{% static 'images/talk.jpg' %}">
+                <div class="col-sm-6 d-flex justify-content-start">
+                    <div class="d-none d-sm-block">
+                        <img style="max-height: 300px;" class="img-fluid" src="{% static 'images/talk.jpg' %}">
+                    </div>
                 </div>
-                <div class="col-6 d-flex align-self-center">
-                    <div class="card" style="border: none;">
+                <div class="col-sm-6 d-flex align-self-center">
+                    <div class="card py-4" style="border: none;">
                         <h1>TELL US WHAT YOU WANT</h1>
                         <lead style="font-size: 1.3rem;">Share your vision with us, and help us make that become a reality. 
                         </lead>
@@ -82,16 +84,18 @@
         </div>
         <div class="col-md-8">
             <div class="row">
-                <div class="col-6 d-flex align-self-center">
-                    <div class="card text-right" style="border: none;">
+                <div class="col-sm-6 d-flex align-self-center">
+                    <div class="card text-right py-4" style="border: none;">
                         <h1>WE DESIGN IT</h1>
                         <lead style="font-size: 1.3rem;">We will create a visual sketch of the website for you, until you are happy with the final design.
 
                         </lead>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <img class="img-fluid" src="{% static 'images/design.jpg' %}">
+                <div class="col-sm-6 d-flex justify-content-end">
+                    <div class="d-none d-sm-block">
+                        <img style="max-height: 300px;" class="img-fluid" src="{% static 'images/design.jpg' %}">
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,11 +104,13 @@
     <div class="row">
         <div class="col-md-8">
             <div class="row">
-                <div class="col-6 d-flex justify-content-start">
-                    <img class="img-fluid" src="{% static 'images/build.png' %}">
+                <div class="col-sm-6 d-flex justify-content-start">
+                    <div class="d-none d-sm-block">
+                    <img style="max-height: 300px;" class="img-fluid" src="{% static 'images/build.jpg' %}">
+                    </div>
                 </div>
-                <div class="col-6 d-flex align-self-center">
-                    <div class="card" style="border: none;">
+                <div class="col-sm-6 d-flex align-self-center">
+                    <div class="card py-4" style="border: none;">
                         <h1>WE BUILD IT</h1>
                         <lead style="font-size: 1.3rem;">We will then build the website for you, no templates included!
                         </lead>
@@ -123,15 +129,17 @@
         </div>
         <div class="col-md-8">
             <div class="row">
-                <div class="col-6 d-flex align-self-center">
-                    <div class="card text-right" style="border: none;">
+                <div class="col-sm-6 d-flex align-self-center">
+                    <div class="card text-right py-4" style="border: none;">
                         <h1>WE DEPLOY IT</h1>
                         <lead style="font-size: 1.3rem;">Once the website has been built, we will deploy it to the internet and host it for you.
                         </lead>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <img class="img-fluid" src="{% static 'images/deploy.png' %}">
+                <div class="col-sm-6 d-flex justify-content-end">
+                    <div class="d-none d-sm-block">
+                    <img style="max-height: 300px;" class="img-fluid" src="{% static 'images/deploy.jpg' %}">
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,40 +193,20 @@
 </div>
 <div class="container-fluid bg-white">
     <div class="row py-4">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <p><b>WE USE:</b></p>
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/python.jpg' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/django.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/bootstrap.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/nginx.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/gunicorn.jpg' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/html.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/css.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/js.png' %}">
-        </div>
-        <div class="col-md-1 text-center align-self-center">
-            <img class="img-fluid" id="cart-icon" src="{% static 'images/git.png' %}">
-        </div>
-        <div class="col-md-1">
+        <div class="d-flex flex-wrap justify-content-around mx-auto">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/python.jpg' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/django.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/bootstrap.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/nginx.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/gunicorn.jpg' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/html.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/css.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/js.png' %}">
+            <img class="img-fluid m-3" style="height: 100px;" src="{% static 'images/git.png' %}">
         </div>
     </div>
 </div>
 {% endblock %}
+
+
+<div class="col-md-1 text-center align-self-center"></div>
