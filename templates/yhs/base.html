@@ -35,48 +35,27 @@
         <a class="yel-hov mx-4 nav-item nav-link text-white" style="font-size: 1.5rem; text-decoration-color: #F9ED69;" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
         <a class="yel-hov mx-4 nav-item nav-link text-white" style="font-size: 1.5rem;" href="#">Pricing</a>
         <a class="yel-hov mx-4 nav-item nav-link text-white" style="font-size: 1.5rem;" href="#">Portfolio</a>
-        <a class="btn btn-primary px-5 mx-4 nav-item nav-link button-hov" style="font-size: 1.5rem; color: black;" href="#"><span class="text-hov">Contact</span></a>
+        <a class="btn btn-primary px-5 mx-4 nav-item nav-link button-hov" style="font-size: 1.5rem; color: black;" href="{% url 'contact' 'website' %}"><span class="text-hov">Contact</span></a>
       </div>
     </div>
   </nav>
 {% block content %}
 {% endblock %}
 <!-- Footer -->
-<footer class="bg-secondary text-center text-lg-start sticky-bottom border-top">
-  <div class="container-fluid p-5 my-3">
+<footer class="bg-secondary text-center text-lg-start sticky-bottom">
+  <div class="container-fluid p-5">
     <div class="row">
-      <div class="col-lg-6 col-md-12">
-      <h5 class="text-uppercase text-white mb-4">Pages</h5>
-        <div class="pb-4 row justify-content-center">
-          <div class="d-flex flex-wrap">
-            <a class="mr-5 text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Home</p></a>
-            <a class="mr-5 text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Contact</p></a>
-            <a class="mr-5 text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Pricing</p></a>
-            <a class="mr-5 text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Portfolio</p></a>
-          </div>
-        </div>
-      </div>
-        
-      <div class="col-lg-3 col-md-6">
-        <h5 class="text-uppercase text-white mb-4">Websites</h5>
-        <div class="row">
-          <div class="col">
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.troubador.co.uk" target="_blank" class="text-white"><p>Troubador Publishing</p></a>
-              </li>
-              <li>
-                <a href="https://www.bookguild.co.uk/" target="_blank" class="text-white"><p>The Book Guild</p></a>
-              </li>
-              <li>
-                <a href="https://books.google.co.uk/" target="_blank" class="text-white"><p>Google Books</p></a>
-              </li>
-            </ul>              
-          </div>
-        </div>
+      <div class="col-md-6">
+        <h5 class="text-uppercase text-white mb-4">Pages</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Home</p></a></li>
+            <li><a class="text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Contact</p></a></li>
+            <li><a class="text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Pricing</p></a></li>
+            <li><a class="text-white" style="text-decoration: none;" href="" target="_blank" class="text-white"><p>Portfolio</p></a></li>
+          </ul>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-md-6">
           <h5 class="text-uppercase text-white mb-4">The Legal Stuff</h5>
           <div class="row">
             <div class="col">
