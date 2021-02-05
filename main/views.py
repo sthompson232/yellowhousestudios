@@ -11,6 +11,15 @@ def home(request):
 
 def contact(request, website):
 
+    if website == 'basic':
+        initial = {'package':'Basic Website'}
+    if website == 'standard':
+        initial = {'package':'Standard Website'}
+    if website == 'business':
+        initial = {'package':'Business Website'}
+    else:
+        initial = ''
+
     if request.POST:
         form = ContactForm(request.POST)
 
@@ -34,7 +43,7 @@ def contact(request, website):
             messages.success(request, 'You have successfully sent an email.')
             return redirect('contact', {'website':'consultation'})
     else:
-        form = ContactForm()
+        form = ContactForm(initial=initial)
 
     context = {
         "title":"Contact",
