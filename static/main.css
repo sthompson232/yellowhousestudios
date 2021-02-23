@@ -13,10 +13,6 @@
   color: #F9ED69 !important;
 }
 
-.h-txt {
-  padding: 20% 2%;
-}
-
 .button-hov:hover .text-hov {
   color: black;
 }

@@ -2,49 +2,20 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid h-txt">
-    <div class="h-txt">
-    <div class="row">
-        <div class="col">
-            <h1 style="font-size: 12rem;" class="display-1 text-white">HAND <span class="text-primary">CRAFTED</span> WEB DESIGN</h1>
+<div class="container-fluid d-flex align-items-center" style="min-height:100%;">
+    <div class="mx-sm-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-size: 10rem;" class="display-1 text-white">HAND <span class="text-primary">CRAFTED</span> WEB DESIGN</h1>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-8">
-            <lead style="font-size: 1.2rem;" class="text-white">Our websites do not use templates, ensuring a unique website for every customer. Get your free website consultation today and take your first step to extend your brand. Whether you want to extend your brand or sell your products, we can make your vision become a reality.</lead>
-            <br>
-            <a style="border-width: 5px;" class="my-5 px-5 btn btn-lg btn-outline-primary text-white button-hov" href="{% url 'contact' 'consultation' %}"><h1 class="text-hov">Free Website Consultation</h1></a>
-        </div>
-    </div>
-    </div>
-</div>
-<div class="container-fluid mid-grey py-5">
-
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center display-2 pb-5">WHAT WE DO</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 col-xl-4">
-            <ul style="list-style: none;">
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">Design your website</lead></li>
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">Build your website</lead></li>
-            </ul>
-        </div>
-        <div class="col-md-6 col-xl-4">
-            <ul style="list-style: none;">
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">Deploy your website</lead></li>
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">Host your website</lead></li>
-            </ul>
-        </div>
-        <div class="col-md-6 col-xl-4">
-            <ul style="list-style: none;">
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">Get your domain</lead></li>
-                <li class="mb-5"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"><lead style="font-size: 1.3rem;">SSL certify your website</lead></li>
-            </ul>
+        <div class="row">
+            <div class="col-8">
+                <lead class="text-white">Our websites do not use templates, ensuring a unique website for every customer. Get your free website consultation today and take your first step to extend your brand.</lead>
+                <br>
+                <a style="border-width: 4px;" class="my-4 px-5 btn btn-outline-primary text-white button-hov" href="{% url 'contact' 'consultation' %}"><lead class="text-hov">Free Website Consultation</lead></a>
+            </div>
         </div>
     </div>
 </div>
@@ -57,88 +28,60 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-8">
-            <div class="row">
-                <div class="col-sm-12 d-flex justify-content-start" data-aos="fade-right">
-                    <div class="d-none d-sm-block">
-                        <img style="height: 200px; width: 200px;" src="{% static 'images/talk.jpg' %}">
-                    </div>
-                    <div class="d-flex align-self-center">
-                        <div class="card py-4" style="border: none;">
-                            <h1>TELL US WHAT YOU WANT</h1>
-                            <lead style="font-size: 1.3rem;">Share your vision with us, and help us make that become a reality. 
-                            </lead>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-sm-12 d-flex justify-content-start">
+            <div class="d-none d-sm-block">
+                <img style="height: 200px; width: 200px;" src="{% static 'images/talk.jpg' %}">
             </div>
-        </div>
-        <div class="col-lg-4">
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-4">
-
-        </div>
-        <div class="col-lg-8">
-            <div class="row">
-                <div class="col-sm-12 d-flex align-self-center" data-aos="fade-left">
-                    <div class="card text-right py-4" style="border: none;">
-                        <h1>WE DESIGN IT</h1>
-                        <lead style="font-size: 1.3rem;">We will create a visual sketch of the website for you, until you are happy with the final design.
-                        </lead>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="d-none d-sm-block">
-                            <img style="height: 200px; width: 200px;" src="{% static 'images/design.jpg' %}">
-                        </div>
-                    </div>
+            <div class="d-flex align-self-center">
+                <div class="card py-4" style="border: none;">
+                    <h1>TELL US WHAT YOU WANT</h1>
+                    <lead style="font-size: 1.3rem;">Share your vision with us, and help us make that become a reality. 
+                    </lead>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-8">
-            <div class="row">
-                <div class="col-sm-12 d-flex justify-content-start" data-aos="fade-right">
-                    <div class="d-none d-sm-block">
-                    <img style="height: 200px; width: 200px;" src="{% static 'images/build.jpg' %}">
-                    </div>
-                    <div class="d-flex align-self-center">
-                        <div class="card py-4" style="border: none;">
-                            <h1>WE BUILD IT</h1>
-                            <lead style="font-size: 1.3rem;">We will then build the website for you, no templates included!
-                            </lead>
-                        </div>
-                    </div>
+        <div class="col-sm-12 d-flex align-self-center">
+            <div class="card text-right py-4" style="border: none;">
+                <h1>WE DESIGN IT</h1>
+                <lead style="font-size: 1.3rem;">We will create a visual sketch of the website for you, until you are happy with the final design.
+                </lead>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="d-none d-sm-block">
+                    <img style="height: 200px; width: 200px;" src="{% static 'images/design.jpg' %}">
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-4">
-
+        <div class="col-sm-12 d-flex justify-content-start">
+            <div class="d-none d-sm-block">
+            <img style="height: 200px; width: 200px;" src="{% static 'images/build.jpg' %}">
+            </div>
+            <div class="d-flex align-self-center">
+                <div class="card py-4" style="border: none;">
+                    <h1>WE BUILD IT</h1>
+                    <lead style="font-size: 1.3rem;">We will then build the website for you, no templates included!
+                    </lead>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-8">
-            <div class="row">
-                <div class="col-sm-12 d-flex align-self-center" data-aos="fade-left">
-                    <div class="card text-right py-4" style="border: none;">
-                        <h1>WE DEPLOY IT</h1>
-                        <lead style="font-size: 1.3rem;">Once the website has been built, we will deploy it to the internet and host it for you.
-                        </lead>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <div class="d-none d-sm-block">
-                        <img style="height: 200px; width: 200px;" src="{% static 'images/deploy.jpg' %}">
-                        </div>
-                    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 d-flex align-self-center">
+            <div class="card text-right py-4" style="border: none;">
+                <h1>WE DEPLOY IT</h1>
+                <lead style="font-size: 1.3rem;">Once the website has been built, we will deploy it to the internet and host it for you.
+                </lead>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="d-none d-sm-block">
+                <img style="height: 200px; width: 200px;" src="{% static 'images/deploy.jpg' %}">
                 </div>
             </div>
         </div>
