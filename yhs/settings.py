@@ -26,7 +26,7 @@ SECRET_KEY = '*5k38!j6wh7w51qy@)(5@5u@zq_^efezj+ddch#dwb+5gz3uyd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['206.189.17.4', '127.0.0.1']
+ALLOWED_HOSTS = ['yellowhousestudios.co.uk', 'www.yellowhousestudios.co.uk', '127.0.0.1']
 
 
 # Application definition
