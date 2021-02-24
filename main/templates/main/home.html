@@ -3,18 +3,12 @@
 
 {% block content %}
 <div class="container-fluid d-flex align-items-center" style="min-height:100%;">
-    <div class="mx-sm-4">
+    <div class="mx-4">
         <div class="row">
             <div class="col-md-12">
-                <h1 style="font-size: 10rem;" class="display-1 text-white">HAND <span class="text-primary">CRAFTED</span> WEB DESIGN</h1>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-8">
-                <lead class="text-white">Our websites do not use templates, ensuring a unique website for every customer. Get your free website consultation today and take your first step to extend your brand.</lead>
-                <br>
-                <a style="border-width: 4px;" class="my-4 px-5 btn btn-outline-primary text-white button-hov" href="{% url 'contact' 'consultation' %}"><lead class="text-hov">Free Website Consultation</lead></a>
+                <h1 id="title-c" style="font-size: 10rem;" class="text-white">HAND <span class="text-primary">CRAFTED</span> WEB DESIGN</h1>
+                <p style="font-size: 1.2rem;" class="text-white">Our websites do not use templates, ensuring a unique website for every customer. Get your free website consultation today and take your first step to extend your brand.</p>
+                <a style="border-width: 4px;font-size: 1.2rem;" class="my-4 px-5 btn btn-outline-primary text-white button-hov" href="{% url 'contact' 'consultation' %}"><lead class="text-hov">Free Website Consultation</lead></a>
             </div>
         </div>
     </div>
@@ -23,66 +17,52 @@
 <div class="container-fluid bg-white p-4">
     <div class="row">
         <div class="col">
-            <h1 class="display-2 py-4 separator">THE PROCESS</h1>
+            <h1 class="display-3 py-4 separator">THE PROCESS</h1>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-12 d-flex justify-content-start">
-            <div class="d-none d-sm-block">
+        <div class="col-sm-12 col-xl-3 d-flex justify-content-start">
+            <div class="d-none d-sm-block d-xl-none">
                 <img style="height: 200px; width: 200px;" src="{% static 'images/talk.jpg' %}">
             </div>
-            <div class="d-flex align-self-center">
-                <div class="card py-4" style="border: none;">
-                    <h1>TELL US WHAT YOU WANT</h1>
-                    <lead style="font-size: 1.3rem;">Share your vision with us, and help us make that become a reality. 
-                    </lead>
-                </div>
+            <div class="card py-4" style="border: none;">
+                <h2>1. TELL US WHAT YOU WANT.</h2>
+                <p>Start by choosing which website plan you would like, and any content you would like on your website. Then share your vision with us, be as detailed or brief as you like, we'll do the rest!
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-12 d-flex align-self-center">
-            <div class="card text-right py-4" style="border: none;">
-                <h1>WE DESIGN IT</h1>
-                <lead style="font-size: 1.3rem;">We will create a visual sketch of the website for you, until you are happy with the final design.
-                </lead>
+        <div class="col-sm-12 col-xl-3 d-flex justify-content-start">
+            <div class="d-none d-sm-block d-xl-none">
+                <img style="height: 200px; width: 200px;" src="{% static 'images/design.jpg' %}">
             </div>
-            <div class="d-flex justify-content-end">
-                <div class="d-none d-sm-block">
-                    <img style="height: 200px; width: 200px;" src="{% static 'images/design.jpg' %}">
-                </div>
+            <div class="card py-4" style="border: none;">
+                <h2>2. WE DESIGN IT.</h2>
+                <p>We will create a visual sketch of the website for you within a few days, we won't start building the website for you until you are happy with the final design. 
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-12 d-flex justify-content-start">
-            <div class="d-none d-sm-block">
+        <div class="col-sm-12 col-xl-3 d-flex justify-content-start">
+            <div class="d-none d-sm-block d-xl-none">
             <img style="height: 200px; width: 200px;" src="{% static 'images/build.jpg' %}">
             </div>
-            <div class="d-flex align-self-center">
-                <div class="card py-4" style="border: none;">
-                    <h1>WE BUILD IT</h1>
-                    <lead style="font-size: 1.3rem;">We will then build the website for you, no templates included!
-                    </lead>
-                </div>
+            <div class="card py-4" style="border: none;">
+                <h2>3. WE BUILD IT.</h2>
+                <p>Using all of the content you have provided us with, such as images and text, We will then start building the website for you, no templates included!
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-12 d-flex align-self-center">
-            <div class="card text-right py-4" style="border: none;">
-                <h1>WE DEPLOY IT</h1>
-                <lead style="font-size: 1.3rem;">Once the website has been built, we will deploy it to the internet and host it for you.
-                </lead>
-            </div>
-            <div class="d-flex justify-content-end">
-                <div class="d-none d-sm-block">
+        <div class="col-sm-12 col-xl-3 d-flex justify-content-start">
+            <div class="d-none d-sm-block d-xl-none">
                 <img style="height: 200px; width: 200px;" src="{% static 'images/deploy.jpg' %}">
-                </div>
+            </div>
+            <div class="card py-4" style="border: none;">
+                <h2>4. WE DEPLOY IT.</h2>
+                <p>Once the website has been built and you're happy with it, we will deploy it to the internet and host it for you on our server free for one year.
+                </p>
             </div>
         </div>
     </div>
@@ -91,39 +71,47 @@
 <div class="container-fluid mid-grey p-4">
     <div class="row">
         <div class="col">
-            <h1 class="display-2 py-4 separator">WHY CHOOSE US?</h1>
+            <h1 class="display-3 py-4 separator">WHY CHOOSE US?</h1>
         </div>
     </div>
 
     <div class="row">
         <div class="col mb-5 px-2">
             <div class="card custom-round p-4 table-responsive">
-                <table style="min-width: 1200px;" class="table table-hover bg-white rounded">
+                <!-- LIST FOR MOBILE -->
+                <div class="d-flex d-sm-none">
+                    <div class="text-center">
+                        <img style="width: 50px;height: 50px;" src="{% static 'images/tick.png' %}">
+                        <p class="my-2">We don't use templates or drag and drop tools to create our websites. This gives us complete control, allowing a completely unique website every time.</p>
+                        <img style="width: 50px;height: 50px;" src="{% static 'images/tick.png' %}">
+                        <p class="my-2">Creating a website can be intimidating, that's why we take care of everything for you. From design to deployment of the website, we've got you covered, so you don't have to worry about doing this yourself.</p>
+                        <img style="width: 50px;height: 50px;" src="{% static 'images/tick.png' %}">
+                        <p class="my-2">We have great customer service, and will always be there to support you with your website. Talk to us directly and avoid spending hours searching through FAQs!</p>
+                    </div>
+                </div>
+                
+                <!-- TABLE FOR LARGE SCALE -->
+                <table class="table bg-white rounded d-none d-sm-block">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col" class="text-center"><lead style="font-size: 1.3rem">yellowhousestudios</lead></th>
-                            <th scope="col" class="text-center"><lead style="font-size: 1.3rem">Wordpress/Wix/Squarespace</lead></th>
+                            <th style="width: 50%;" scope="col"></th>
+                            <th scope="col" class="align-middle text-center">yellowhousestudios</th>
+                            <th scope="col" class="text-center">Website builders</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="font-size: 1.3rem;" class="align-middle"><lead>No templates used to ensure your website is completely unique..</lead></td>
+                            <td class="align-middle">We don't use templates or drag and drop tools to create our websites. This gives us complete control, allowing a completely unique website every time.</td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"></td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/remove.png' %}"></td>
                         </tr>
                         <tr>
-                            <td style="font-size: 1.3rem;" class="align-middle"><lead>No restrictions from drag and drop tools. Anything is possible.</lead></td>
+                            <td class="align-middle">Creating a website can be intimidating, that's why we take care of everything for you. From design to deployment of the website, we've got you covered, so you don't have to worry about doing this yourself.</td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"></td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/remove.png' %}"></td>
                         </tr>
                         <tr>
-                            <td style="font-size: 1.3rem;" class="align-middle"><lead>Don't worry about having to host or deploy your website with an SSL certificate</lead></td>
-                            <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"></td>
-                            <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/remove.png' %}"></td>
-                        </tr>
-                        <tr>
-                            <td style="font-size: 1.3rem;" class="align-middle"><lead>Your time is valuable. Why build your website yourself when we can do it for you!</lead></td>
+                            <td class="align-middle">We have great customer service, and will always be there to support you with your website. Talk to us directly and avoid spending hours searching through FAQs!</td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/tick.png' %}"></td>
                             <td class="text-center align-middle"><img class="mx-4" id="cart-icon" src="{% static 'images/remove.png' %}"></td>
                         </tr>
@@ -136,19 +124,17 @@
 <div class="container-fluid bg-white">
     <div class="row py-4">
         <div class="d-flex flex-wrap justify-content-around mx-auto">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/python.jpg' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/django.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/bootstrap.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/nginx.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/gunicorn.jpg' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/html.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/css.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/js.png' %}">
-            <img class="img-fluid mx-4 my-3" style="height: 100px;" src="{% static 'images/git.png' %}">
+            <h1 class="align-self-center">We Use:</h1>
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/python.jpg' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/django.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/bootstrap.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/nginx.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/gunicorn.jpg' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/html.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/css.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/js.png' %}">
+            <img class="img-fluid mx-4 my-2" style="height: 50px;" src="{% static 'images/git.png' %}">
         </div>
     </div>
 </div>
 {% endblock %}
-
-
-<div class="col-md-1 text-center align-self-center"></div>

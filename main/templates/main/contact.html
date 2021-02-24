@@ -6,7 +6,7 @@
 <div class="container-fluid h-txt">
     <div class="row">
         <div class="col">
-            <h1 style="font-size: 12rem;" class="display-1 text-white"><span class="text-primary">CONTACT</span> US</h1>
+            <h1 style="font-size: 10rem;" class="display-1 text-white"><span class="text-primary">CONTACT</span> US</h1>
         </div>
     </div>
 </div>
@@ -16,11 +16,11 @@
             <form method="post" action="" enctype="multipart/form-data">
                 {% csrf_token %}
                   {{ form|crispy }} 
-                <p style="display: inline;">Alternatively you can email yellowhousestudios@gmail.com</p> 
+                <small style="display: inline;">Alternatively you can email yellowhousestudios@gmail.com</small> 
                 <input class="border float-right btn btn-primary px-4" type="submit" name="form" value="Send Message" />
               </form>
         </div>
-        <div class="col-lg-6 d-flex align-self-center">
+        <div class="col-lg-6 d-flex align-self-center justify-content-center">
             <img class="p-5 img-fluid" src="{% static 'images/contact.jpg' %}">
         </div>
     </div>

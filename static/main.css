@@ -1,16 +1,28 @@
 @charset "UTF-8";
 @import "aoc/aoc.css";
 
-#price-card {
+@media screen and (max-width: 600px) {
+  #title-c {
+    font-size: 80px!important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #title-c {
+    font-size: 220px!important;
+  }
+}
+
+.navbar-nav > a:hover {
+  color: #F9ED69 !important;
+}
+
+.card {
   transition: transform 1s;
 }
 
 #price-card:hover {
   transform: translateY(-20px);
-}
-
-.navbar-nav > a:hover {
-  color: #F9ED69 !important;
 }
 
 .button-hov:hover .text-hov {
