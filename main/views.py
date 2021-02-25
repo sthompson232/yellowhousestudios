@@ -5,11 +5,15 @@ from django.contrib import messages
 
 # Create your views here.
 def home(request):
-    return render(request, 'main/home.html')
+
+    context = {
+        "title":"Web Design"
+    }
+    return render(request, 'main/home.html', context)
 
 
 
-def contact(request, website):
+def contact(request, website=''):
 
     if website == 'basic':
         initial = {'package':'Basic Website'}
@@ -46,7 +50,7 @@ def contact(request, website):
         form = ContactForm(initial=initial)
 
     context = {
-        "title":"Contact",
+        "title":"Free Website Consultation",
         "form":form,
     }
     return render(request, 'main/contact.html', context)
@@ -54,9 +58,17 @@ def contact(request, website):
 
 
 def pricing(request):
-    return render(request, 'main/pricing.html')
+
+    context = {
+        "title":"Pricing",
+    }
+    return render(request, 'main/pricing.html', context)
 
 
 
 def portfolio(request):
-    return render(request, 'main/portfolio.html')
+
+    context = {
+        "title":"Our Portfolio",
+    }
+    return render(request, 'main/portfolio.html', context)
