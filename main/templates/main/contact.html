@@ -6,7 +6,7 @@
 <div class="container-fluid h-txt">
     <div class="row">
         <div class="col">
-            <h1 style="font-size: 10rem;" class="display-1 text-white"><span class="text-primary">CONTACT</span> US</h1>
+            <h1 id="title-c" style="font-size: 10rem;" class="display-1 text-white"><span class="text-primary">CONTACT</span> US</h1>
         </div>
     </div>
 </div>
@@ -15,7 +15,19 @@
         <div class="col-lg-6 p-5">
             <form method="post" action="" enctype="multipart/form-data">
                 {% csrf_token %}
-                  {{ form|crispy }} 
+                <div class="form-row">
+                    <div class="col-md-6">
+                        {{ form.first_name|as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.last_name|as_crispy_field }}
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.email|as_crispy_field }}
+                        {{ form.package|as_crispy_field }}
+                        {{ form.message|as_crispy_field }}
+                    </div>
+                </div>
                 <small style="display: inline;">Alternatively you can email yellowhousestudios@gmail.com</small> 
                 <input class="border float-right btn btn-primary px-4" type="submit" name="form" value="Send Message" />
               </form>
