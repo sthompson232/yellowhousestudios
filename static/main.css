@@ -5,6 +5,12 @@
   #title-c {
     font-size: 80px!important;
   }
+  #title-a {
+    font-size: 25px!important;
+  }
+  #logo {
+    height: 30px!important;
+  }
 }
 
 @media screen and (min-width: 1800px) {
