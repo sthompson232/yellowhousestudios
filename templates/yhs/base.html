@@ -61,7 +61,7 @@
 <!-- FLASH MESSAGES -->
 {% if messages %}
 {% for message in messages %}
-  <div class="text-center alert alert-{{ message.tags }}">
+  <div class="text-center alert alert-{{ message.tags }}" role="alert">
     {{ message }}
   </div>
 {% endfor %}

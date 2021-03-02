@@ -141,3 +141,9 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'noreplydronely@gmail.com'
 EMAIL_HOST_PASSWORD = 'sgoszefkpsjwsymg'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LcGXm4aAAAAAOf6VQ7TdQiu02GVwsAQvbETb22r'
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
