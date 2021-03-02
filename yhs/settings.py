@@ -139,8 +139,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'noreplydronely@gmail.com'
-EMAIL_HOST_PASSWORD = 'sgoszefkpsjwsymg'
+EMAIL_HOST_USER = 'noreply.yellowhousestudios@gmail.com'
+EMAIL_HOST_PASSWORD = 'qlcnegchfikrmryl'
 GOOGLE_RECAPTCHA_SECRET_KEY = '6LcGXm4aAAAAAOf6VQ7TdQiu02GVwsAQvbETb22r'
 
 from django.contrib.messages import constants as messages
